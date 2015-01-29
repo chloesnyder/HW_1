@@ -102,7 +102,7 @@ mat4 mat4::rotate(float angle, float x, float y, float z) {
     vec4 v3y = vec4(0, 0, 0, 1);
 
     vec4 v0z = vec4(z*cos(angle), -z*sin(angle), 0, 0);
-    vec4 v1z = vec4(-z*sin(angle), z*cos(angle), 0, 0);
+    vec4 v1z = vec4(z*sin(angle), z*cos(angle), 0, 0);
     vec4 v2z = vec4(0, 0, 1, 0);
     vec4 v3z = vec4(0, 0, 0, 1);
 
